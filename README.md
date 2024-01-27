@@ -20,6 +20,7 @@ Simply download the data from the `iomt` UT box folder and put in the directory 
 # Running the code
 Just run
 ```
+cd FlatVel_A
 python plt.py
 ```
 and that should generate all the exact same plots that are currently in the UT box `plots` folder.
