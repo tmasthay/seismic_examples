@@ -1,0 +1,84 @@
+paths:
+  cbar: conf/data/orange_seismic.csv
+  iomt: iomt
+
+debug: False
+debug_sleep: 5
+
+schemes:
+  - color: "r"
+    linestyle: "-"
+  - color: "b"
+    linestyle: "--"
+  - color: "g"
+    linestyle: ":"
+
+cbar:
+  path: conf/data/orange_seismic.csv
+
+model:
+  save:
+    path: plots/model
+    duration: 100
+  subplot:
+    shape: [1, 1]
+    kw:
+      figsize: [10, 10]
+  slice:
+    strides: [10, 1, 1]
+    none_dims: [2, 3]
+    ctrl: null
+    permute: null
+    start: null
+    cut: null
+  kw:
+    aspect: auto
+    cmap: orange_seismic
+  configs:
+    - title: $v_p$ sample
+      xlabel: Horizontal Extent
+      ylabel: Depth
+      cbar: True
+
+obs:
+  save:
+    path: plots/obs
+    duration: 1000
+
+  subplot:
+    shape: [1, 1]
+    kw:
+      figsize: [10, 10]
+
+  configs:
+    - kw:
+        aspect: auto
+        cmap: orange_seismic
+      title: Sample
+      xlabel: Horizontal Extent
+      ylabel: Depth
+      cbar: True
+      rec:
+        label: "Receiver Locations"
+        color: "r"
+        marker: "x"
+        s: 5
+      src:
+        label: "Source Location"
+        color: "b"
+        marker: "o"
+        s: 100
+      legend:
+        loc: "lower left"
+
+  slice:
+    strides: [1, 1, 1]
+    none_dims: [1, 2]
+    ctrl: null
+    permute: null
+    start: null
+    cut: null
+
+  gain:
+    const: 0.0
+    pow: 2.0
