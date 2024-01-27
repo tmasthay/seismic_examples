@@ -8,8 +8,8 @@ Protect your system `python` build system by [installing Conda](https://conda.io
 Now that you've got conda setup, run the following series of commands in the terminal.
 ```
 cd /whatever/repo/path
-git clone name_of_repo
-cd name_of_repo
+git clone https://github.com/tmasthay/seismic_examples.git
+cd seismic_examples/FlatVel_A
 conda create -n flatvel python=3.10
 pip install -r requirements.txt
 ```
