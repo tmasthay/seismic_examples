@@ -1,8 +1,7 @@
 # seismic_examples
 
 # Install Conda
-Protect your system `python` build system by [installing Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html). 
-From there create a conda environment with `python` with `version=3.10.13`. 
+Protect your system `python` build system by [installing Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).  
 
 
 # Setting up local environment
