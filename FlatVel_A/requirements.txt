@@ -1,5 +1,6 @@
+# python==3.10.13
 black>=24.1.0
-numpy>=3.8.2
+numpy>=1.26.3
 omegaconf>=2.3.0
 torch>=2.1.2
 matplotlib>=3.8.2
